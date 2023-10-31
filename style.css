@@ -1,0 +1,193 @@
+body {
+  background-color: rgb(54, 54, 54);
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  font-size: 25px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  width: 850px;
+  height: 550px;
+}
+.indicator {
+  background-image: url("images/beach.jpg");
+  width: 350px;
+  height: 550px;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px aqua;
+  opacity: 0.8;
+  border: 3px outset aqua;
+  transition: transform 1s;
+}
+.indicator:hover {
+  box-shadow: 2px 2px 40px aqua;
+  transform: scaleY(1.1);
+}
+.info {
+  margin-left: 20px;
+  color: rgba(0, 0, 0);
+}
+.content {
+  width: 500px;
+  height: 530px;
+  background-color: rgb(45, 45, 45);
+  margin-top: 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px 25px rgb(255, 255, 255);
+  border: 3px outset aqua;
+}
+.content-1 {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  margin: 20px;
+}
+.content-2 {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  margin: 20px;
+}
+.content-3 {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  margin: 20px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  color: rgb(3, 3, 3);
+  background-color: white;
+  width: 105px;
+  align-items: center;
+  transition: transform 1s;
+}
+.box-1:hover {
+  transform: scaleY(1.1);
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 25px aqua;
+}
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  color: white;
+  width: 105px;
+  align-items: center;
+  transition: transform 1s;
+  opacity: 0.8;
+}
+.box-2:hover {
+  transform: scaleY(1.1);
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 25px aqua;
+  opacity: 1;
+}
+.box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  color: white;
+  width: 105px;
+  align-items: center;
+  transition: transform 1s;
+  opacity: 0.8;
+}
+.box-3:hover {
+  transform: scaleY(1.1);
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 25px aqua;
+  opacity: 1;
+}
+.box-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  color: white;
+  width: 105px;
+  align-items: center;
+  transition: transform 1s;
+  opacity: 0.8;
+}
+.box-4:hover {
+  transform: scaleY(1.1);
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 25px aqua;
+  opacity: 1;
+}
+.body-location {
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.svg-location {
+  height: 60px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 5px;
+  stroke: #19f6e8;
+}
+.location {
+  color: #fff;
+  font-family: "roboto condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+.svg-location:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
